@@ -1,6 +1,12 @@
 import React from "react";
+import { saveForm } from "../scripts/firebase";
 
 const Main = () => {
+  const handleSubmit = (event) => {
+    console.log('está chamando');
+    event.preventDefault(); 
+    saveForm();
+  };
   return (
     <main className="l-main">
       <section className="home bd-grid" id="home">
@@ -212,7 +218,7 @@ const Main = () => {
       <section className="contact section" id="contact">
         <h2 className="section-title">Contato</h2>
         <div className="contact__container bd-grid">
-          <form action="" method="post" className="contact__form">
+          <form onSubmit={handleSubmit} action="" method="post" className="contact__form">
             <input
               type="text"
               autoComplete="name"
