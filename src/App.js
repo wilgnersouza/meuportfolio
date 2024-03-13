@@ -3,7 +3,6 @@ import './style/style.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import './scripts/script.js'
 
 function App() {
   return (
