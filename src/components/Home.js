@@ -1,18 +1,22 @@
 import React from "react";
+import Typical from "react-typical";
 
 const Home = () => {
   return (
     <section className="home bd-grid" id="home">
       <div className="home__data">
-        <h1 className="home__title">
-          Olá!
+        <h3 className="home__title">
+          Hi 😁
           <br />
-          Eu sou <span className="home__title-color">Wilgner,</span>
-          <br />
-          Software Developer
-        </h1>
+          I'm <span className="home__title-color">Wilgner,</span>
+          <br />{" "}
+          <Typical
+            loop={Infinity}
+            steps={["Software Dev", 1400, "Back-End Dev", 1400, "Front-End Dev", 1400, "DevOps", 1400]}
+          ></Typical>
+        </h3>
         <a href="#contact" className="button">
-          Contate-me
+          Contact me
         </a>
       </div>
 
