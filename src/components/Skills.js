@@ -158,8 +158,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div>
-          <img src="/work1.PNG" alt="" className="skills__img" />
+        <div className="skill__highlighted">
+          <a href="https://engagx.com/" target="_blank" rel="noreferrer">
+            <img src="/engagx.png" alt="" className="skills__img" />
+          </a>
+          <p>White Label Engagx</p>
         </div>
       </div>
     </section>

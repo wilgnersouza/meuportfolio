@@ -343,6 +343,12 @@ img {
   overflow-y: scroll;
   max-height: 300px;
 }
+.skill__highlighted p {
+  font-style: italic;
+  text-align: center;
+  margin-top: 3px;
+  color: var(--first-color);
+}
 
 /*sessão trabalhos*/
 .work__container {
@@ -374,6 +380,7 @@ img {
   font-style: italic;
 }
 .disclaimer-note{
+  margin-top: 15px;
   font-size: 12px;
 }
 /*sessão contato*/
