@@ -3,63 +3,79 @@ import React from "react";
 const Work = () => {
   return (
     <section className="work section" id="work">
-      <h2 className="section-title">Trabalhos</h2>
+      <h2 className="section-title">Work Experience</h2>
       <p className="text_work bd-grid">
-        Aqui listo alguns dos meus trabalhos e projetos que desenvolvi ao longo
-        da minha caminhada como desenvolvedor. Você pode clicar em qualquer
-        imagem para ser redirecionado ao diretorio no GitHub e assim visualizar
-        outros projetos meus 😁.
+        Here I list some of my work/projects that I developed during these years
+        as a developer. You can click on any image to be redirected to the
+        respective website or you can visit my Github again by going to the top
+        of this portfolio or clicking{" "}
+        <a
+          href="https://github.com/wilgnersouza"
+          target="_blank"
+          rel="noreferrer"
+        >
+          here
+        </a>
       </p>
       <div className="work__container bd-grid">
         <a
-          href="https://github.com/wilgnersouza/projeto_starbucks"
+          href="https://datacrazy.io/"
           target="_blank"
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/work1.PNG" alt="" />
+          <img src="/data-crazy.png" alt="CRM Data Crazy" />
         </a>
         <a
-          href="https://github.com/wilgnersouza/Clone_Fbook"
+          href="https://programapleno.com.br/"
           target="_blank"
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/work2.png" alt="" />
+          <img src="/arco-pleno.png" alt="Arco Pleno" />
         </a>
         <a
-          href="https://github.com/wilgnersouza/projeto-imobiliaria"
+          href="https://www.raketo.com.br/"
           target="_blank"
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/work3.png" alt="" />
+          <img src="/raketo.png" alt="Raketo" />
         </a>
         <a
-          href="https://github.com/wilgnersouza/Projeto-Empresa"
+          href="https://www.anbima.com.br/pt_br/pagina-inicial.htm"
           target="_blank"
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/work4.png" alt="" />
+          <img src="/anbima.png" alt="Anbima Edu" />
         </a>
         <a
-          href="https://github.com/wilgnersouza/app-supermercado"
+          href="https://maxipas.com.br/plataforma/"
           target="_blank"
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/work5.png" alt="" />
+          <img src="/maxipas-piom.png" alt="Maxipas PIOM" />
         </a>
         <a
-          href="https://github.com/wilgnersouza/pokedexApp"
+          href="https://robertacarbonari.com.br/"
           target="_blank"
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/work6.png" alt="" />
+          <img src="/you-roberta.png" alt="You - Roberta Carbonari" />
         </a>
       </div>
+      <p className="bd-grid disclaimer-note">
+        <span className="disclaimer">*Disclaimer:</span>
+        <span className="rest">
+          I <span className="do-not">do not </span>
+          maintain some of the projects mentioned above, therefore some of those
+          projects may be impacted by posterior work done by people who are
+          still involved with them.
+        </span>
+      </p>
     </section>
   );
 };

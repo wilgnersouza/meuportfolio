@@ -362,6 +362,20 @@ img {
 .text_work{
   text-align: center;
 }
+.disclaimer {
+  color: var(--first-color); /* Cor para o *Disclaimer: */
+}
+
+.do-not {
+  font-weight: bold;
+}
+
+.rest {
+  font-style: italic;
+}
+.disclaimer-note{
+  font-size: 12px;
+}
 /*sessão contato*/
 .contact__input {
   width: 100%;
