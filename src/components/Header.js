@@ -26,22 +26,22 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                Sobre
+                About
               </a>
             </li>
             <li className="nav__item">
               <a href="#skills" className="nav__link">
-                Habilidades
+                Skills
               </a>
             </li>
             <li className="nav__item">
               <a href="#work" className="nav__link">
-                Trabalhos
+                Works
               </a>
             </li>
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                Contato
+                Contact
               </a>
             </li>
           </ul>
