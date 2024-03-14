@@ -294,19 +294,54 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 80%;
+  width: 90%;
 }
 .skills__css {
-  width: 70%;
+  width: 85%;
 }
 .skills__js {
-  width: 60%;
+  width: 90%;
 }
 .skills__node {
-  width: 35%;
+  width: 90%;
 }
+.skills__git {
+  width: 90%;
+}
+.skills__typescript {
+  width: 90%;
+}
+.skills__react {
+  width: 70%;
+}
+.skills__vuejs {
+  width: 60%;
+}
+.skills__docker {
+  width: 75%;
+}
+.skills__postgresql {
+  width: 80%;
+}
+.skills__nestjs {
+  width: 70%;
+}
+.skills__prisma {
+  width: 45%;
+}
+.skills__aws {
+  width: 65%;
+}
+.skills__java {
+  width: 45%;
+}
+
 .skills__img {
   border-radius: .5rem;
+}
+.skills__data__scroll{
+  overflow-y: scroll;
+  max-height: 300px;
 }
 
 /*sessão trabalhos*/
