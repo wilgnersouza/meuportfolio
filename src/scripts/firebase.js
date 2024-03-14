@@ -11,17 +11,18 @@ const firebaseConfig = {
   measurementId: "G-9GVKW0ZY83"
 };
 
+// eslint-disable-next-line no-unused-vars
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
 export async function saveForm() {
   try {
     await addDoc(collection(db, "mensagens"), {
-      nome: document.getElementById('nome').value,
+      nome: document.getElementById('name').value,
       email: document.getElementById('email').value,
       mensagem: document.getElementById('message').value
     });
-    document.getElementById('nome').value = '';
+    document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
     alert('Muito obrigado pelo contato. Retornarei o mais breve possível 😁');

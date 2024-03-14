@@ -3,13 +3,22 @@ import { saveForm } from "../scripts/firebase";
 
 const Contact = () => {
   const handleSubmit = (event) => {
-    console.log("está chamando");
     event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("message").value;
+
+    if (!name || !email || !mensagem) {
+      alert("Fields are required. Fill them in, please xD");
+      return;
+    }
+
     saveForm();
   };
+
   return (
     <section className="contact section" id="contact">
-      <h2 className="section-title">Contato</h2>
+      <h2 className="section-title">Contact</h2>
       <div className="contact__container bd-grid">
         <form
           onSubmit={handleSubmit}
@@ -20,24 +29,27 @@ const Contact = () => {
           <input
             type="text"
             autoComplete="name"
-            placeholder="Nome"
+            placeholder="Name"
             className="contact__input"
-            id="nome"
+            id="name"
+            required
           />
           <input
             type="email"
             autoComplete="email"
-            placeholder="Seu melhor email"
+            placeholder="Your best email"
             className="contact__input"
             id="email"
+            required
           />
           <textarea
             name=""
             id="message"
-            placeholder="Insira seu texto aqui"
+            placeholder="Enter your text here. Recommendation, congratulations, suggestion, etc..."
             cols="0"
             rows="10"
             className="contact__input"
+            required
           ></textarea>
           <input
             type="submit"
