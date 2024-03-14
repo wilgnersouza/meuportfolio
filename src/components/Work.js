@@ -24,7 +24,7 @@ const Work = () => {
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/data-crazy.png" alt="CRM Data Crazy" />
+          <img src="https://i.imgur.com/5Aq0mQ9.png" alt="CRM Data Crazy" />
         </a>
         <a
           href="https://programapleno.com.br/"
@@ -32,7 +32,7 @@ const Work = () => {
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/arco-pleno.png" alt="Arco Pleno" />
+          <img src="https://i.imgur.com/6JYYP5z.png" alt="Arco Pleno" />
         </a>
         <a
           href="https://www.raketo.com.br/"
@@ -40,7 +40,7 @@ const Work = () => {
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/raketo.png" alt="Raketo" />
+          <img src="https://i.imgur.com/bbByNiV.png" alt="Raketo" />
         </a>
         <a
           href="https://www.anbima.com.br/pt_br/pagina-inicial.htm"
@@ -48,7 +48,7 @@ const Work = () => {
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/anbima.png" alt="Anbima Edu" />
+          <img src="https://i.imgur.com/HQIWaQ9.png" alt="Anbima Edu" />
         </a>
         <a
           href="https://maxipas.com.br/plataforma/"
@@ -56,7 +56,7 @@ const Work = () => {
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/maxipas-piom.png" alt="Maxipas PIOM" />
+          <img src="https://i.imgur.com/ZTJcGt8.png" alt="Maxipas PIOM" />
         </a>
         <a
           href="https://robertacarbonari.com.br/"
@@ -64,7 +64,7 @@ const Work = () => {
           className="work__img"
           rel="noreferrer"
         >
-          <img src="/you-roberta.png" alt="You - Roberta Carbonari" />
+          <img src="https://i.imgur.com/Ocx3T7G.png" alt="You - Roberta Carbonari" />
         </a>
       </div>
       <p className="bd-grid disclaimer-note">

@@ -160,7 +160,7 @@ const Skills = () => {
         </div>
         <div className="skill__highlighted">
           <a href="https://engagx.com/" target="_blank" rel="noreferrer">
-            <img src="https://i.imgur.com/UjbA8Pk.png" alt="" className="skills__img" />
+            <img src="https://i.imgur.com/zGYmn2E.png" alt="" className="skills__img" />
           </a>
           <p>White Label Engagx</p>
         </div>

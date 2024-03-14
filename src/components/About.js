@@ -6,7 +6,7 @@ const About = () => {
       <h2 className="section-title">About</h2>
       <div className="about__container bd-grid">
         <div className="about__img">
-          <img src="/capa.png" alt="" />
+          <img src="https://i.imgur.com/WXAvfA2.png" alt="" />
         </div>
 
         <div>

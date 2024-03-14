@@ -63,7 +63,7 @@ const Home = () => {
               className="home__blob-img"
               x="50"
               y="60"
-              href="/perfil.png"
+              href="https://i.imgur.com/1256ut0.png"
             />
           </g>
         </svg>
