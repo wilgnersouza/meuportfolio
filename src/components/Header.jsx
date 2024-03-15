@@ -1,11 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import Typical from "react-typical";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle("dark-mode");
   };
 
   return (
@@ -13,9 +19,11 @@ const Header = () => {
       <nav className="nav bd-grid">
         <div>
           <a href="#" className="nav__logo">
-            {""}
+            Wilgner
           </a>
-          <Typical loop={Infinity} steps={["Wilgner", 1200, "Wilgner Souza", 1200]}></Typical>
+        </div>
+        <div className="dark-mode-toggle" onClick={toggleDarkMode}>
+          {isDarkMode ? "Modo Claro" : "Modo Escuro"}
         </div>
         <div className={`nav__menu ${isMenuOpen ? "show" : ""}`} id="nav-menu">
           <ul className="nav__list">
@@ -36,7 +44,7 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a href="#work" className="nav__link">
-              Work Experience
+                Work Experience
               </a>
             </li>
             <li className="nav__item">
