@@ -1,19 +1,18 @@
-
 /*Importando fonte*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*declarando variáveis*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-/*cores*/
+  /*cores*/
   --first-color: hsl(224, 89%, 60%);
   --second-color: hsl(224, 56%, 12%);
-/*fontes e tipografia*/
-  --body-font: 'Poppins', sans-serif;
+  /*fontes e tipografia*/
+  --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
   /*margens*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -28,12 +27,14 @@
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --smaller-font-size: 0.875rem;
   }
 }
 
 /*doc principal*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 html {
@@ -45,7 +46,9 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 ul {
@@ -73,7 +76,7 @@ img {
 }
 .section-title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 64px;
   height: 0.18rem;
   left: 0;
@@ -117,11 +120,11 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 40%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 .nav__item {
@@ -136,7 +139,7 @@ img {
 }
 .nav__link:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -155,7 +158,7 @@ img {
 /*ativando menu*/
 .active::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -213,7 +216,7 @@ img {
 /*botões*/
 .button {
   display: inline-block;
-  padding: .75rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   text-align: center;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
@@ -223,19 +226,18 @@ img {
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 2px solid hsl(224, 89%, 60%);
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 hsl(224, 89%, 60%);
 }
-.button:hover{
+.button:hover {
   color: white;
   box-shadow: inset 0 -100px 0 0 hsl(224, 89%, 60%);
- }
+}
 .button:active {
   transform: scale(0.9);
 }
-
 
 /*seção sobre*/
 .about__container {
@@ -250,7 +252,7 @@ img {
 }
 .about__img img {
   width: 200px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /*seção habilidades*/
@@ -270,9 +272,9 @@ img {
   align-items: center;
   position: relative;
   font-weight: var(--font-semi);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 .skills__icon {
@@ -289,8 +291,8 @@ img {
   left: 0;
   bottom: 0;
   background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
+  height: 0.25rem;
+  border-radius: 0.5rem;
   z-index: var(--z-back);
 }
 .skills__html {
@@ -337,9 +339,9 @@ img {
 }
 
 .skills__img {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-.skills__data__scroll{
+.skills__data__scroll {
   overflow-y: scroll;
   max-height: 300px;
 }
@@ -355,8 +357,8 @@ img {
   row-gap: 2rem;
 }
 .work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: .5rem;
+  box-shadow: 0px 4px 25px rgba(17, 47, 65, 0.15);
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 .work__img img {
@@ -365,11 +367,11 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
-.text_work{
+.text_work {
   text-align: center;
 }
 .disclaimer {
-  color: var(--first-color); /* Cor para o *Disclaimer: */
+  color: var(--first-color);
 }
 
 .do-not {
@@ -378,8 +380,9 @@ img {
 
 .rest {
   font-style: italic;
+  color: var(--second-color);
 }
-.disclaimer-note{
+.disclaimer-note {
   margin-top: 15px;
   font-size: 14px;
 }
@@ -389,10 +392,11 @@ img {
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+  opacity: 1;
 }
 .contact__button {
   position: relative;
@@ -410,17 +414,17 @@ img {
   border: 2px solid hsl(224, 89%, 60%);
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 hsl(224, 89%, 60%);
- }
- .contact__button:hover{
-   color: white;
-   box-shadow: inset 0 -100px 0 0 hsl(224, 89%, 60%);
- }
- .contact__button:active {
-   transform: scale(0.9);
-  }
-  .contact__form textarea{
-    font-family: var(--body-font);
-  }
+}
+.contact__button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 hsl(224, 89%, 60%);
+}
+.contact__button:active {
+  transform: scale(0.9);
+}
+.contact__form textarea {
+  font-family: var(--body-font);
+}
 
 /*sessão rodape*/
 .footer {
@@ -448,8 +452,7 @@ img {
 
 /*======================================*/
 
-
- /*=====media queries=====*/
+/*=====media queries=====*/
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
@@ -483,7 +486,7 @@ img {
     text-align: initial;
   }
   .skills__container {
-    grid-template-columns: .7fr;
+    grid-template-columns: 0.7fr;
     justify-content: center;
     column-gap: 1rem;
   }
@@ -566,11 +569,47 @@ img {
   .home {
     padding: 10rem 0 2rem 2rem;
   }
-  .l-header{
+  .l-header {
     padding-left: 2rem;
     padding-right: 2rem;
   }
   .home__img {
     width: 450px;
   }
+}
+
+/* Dark Mode Style */
+.toggle__icon__dark-mode {
+  width: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+.dark-mode body {
+  color: #eee;
+  background-color: #111;
+}
+.dark-mode .l-header {
+  background-color: #111;
+}
+.dark-mode .section-title,
+.dark-mode .nav__link,
+.dark-mode .nav__logo {
+  color: #fff;
+}
+.dark-mode .contact__input {
+  background-color: #333;
+  color: #fff;
+}
+.dark-mode .home__social-icon {
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+.home__social-icon:hover {
+  color: whitesmoke;
 }

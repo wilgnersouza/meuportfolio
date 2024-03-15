@@ -23,7 +23,11 @@ const Header = () => {
           </a>
         </div>
         <div className="dark-mode-toggle" onClick={toggleDarkMode}>
-          {isDarkMode ? "Modo Claro" : "Modo Escuro"}
+        {isDarkMode ? (
+            <i className="bx bx-sun toggle__icon__dark-mode"></i>
+          ) : (
+            <i className='bx bxs-moon' ></i>
+          )}
         </div>
         <div className={`nav__menu ${isMenuOpen ? "show" : ""}`} id="nav-menu">
           <ul className="nav__list">
