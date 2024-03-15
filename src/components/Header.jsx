@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,9 +9,19 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const isDarkModeSaved = localStorage.getItem('darkMode');
+    if (isDarkModeSaved) {
+      setIsDarkMode(isDarkModeSaved === 'true');
+      document.body.classList.toggle('dark-mode', isDarkModeSaved === 'true');
+    }
+  }, []);
+
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle("dark-mode");
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    localStorage.setItem('darkMode', newMode.toString());
+    document.body.classList.toggle('dark-mode', newMode);
   };
 
   return (
