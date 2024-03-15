@@ -53,7 +53,7 @@ const Contact = () => {
           ></textarea>
           <input
             type="submit"
-            value="Enviar"
+            value="Send"
             className="contact__button button"
             id="acao"
           />
