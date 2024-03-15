@@ -25,8 +25,8 @@ export async function saveForm() {
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
-    alert('Muito obrigado pelo contato. Retornarei o mais breve possível 😁');
+    alert('Thank you very much. I will get back to you as soon as possible 😁');
   } catch (error) {
-    console.error("Erro ao salvar os dados do formulário:", error);
+    console.error("Error saving form data:", error);
   }
 }
