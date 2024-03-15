@@ -610,6 +610,14 @@ img {
   font-size: 1.5rem;
   color: var(--first-color);
 }
-.home__social-icon:hover {
+.dark-mode .home__social-icon:hover {
+  color: whitesmoke;
+}
+.dark-mode .do-not {
+  font-weight: bold;
+}
+
+.dark-mode .rest {
+  font-style: italic;
   color: whitesmoke;
 }
